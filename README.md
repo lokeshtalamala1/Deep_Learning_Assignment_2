@@ -3,8 +3,8 @@
 # A Deep learning programming assignment where we have to develop a Convolution Neural Network Using a pre-trained model (which is already trained on IMAGENET dataset) from scratch to classify the images in INATURALIST dataset
 
 Convolution Neural Networks
-#### Part A -  CNN from Scratch (refer to Part A Readme.md)
-#### Part B -  CNN using pretrained model (refer to Part B Readme.md)
+#### Part A -  CNN from Scratch
+#### Part B -  CNN using pretrained model
 
 ## Hyperparameter configurations used
  - freeze: 0,0.333,0.666,1
