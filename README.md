@@ -7,7 +7,6 @@ Convolution Neural Networks
 #### Part B -  CNN using pretrained model
 
 ## Hyperparameter configurations used
- - freeze: 0,0.333,0.666,1
  - model: 'inceptionv3','inceptionrn', 'resnet', 'xception'
  - dropout:  0, 0.2, 0.4
  - num_dense: '128, 256, 512
@@ -22,7 +21,7 @@ Convolution Neural Networks
 - num_of_filters : number of filters per each layer 
 - size_of_filters : Size of Each filter
 - activation_function : Activation function for each convolution layer (relu or elu or selu)
-- input_shape : Input image Shape 
+- input_size : Input image Shape 
 - dense_layer_neurons : number of Neurons in Dense layer (Pre Output Layer)
 - output_size : Number of Classes present in the data
 - learning_rate : Learning rate of the network (default = 0.0001)
@@ -39,15 +38,17 @@ Convolution Neural Networks
   Predicts the output on test data
   
 ## Hyperparameter configurations used
- - weight decay: 0,0.0005,0.00005
- - dropout: 0,0.1,0.2,0.4
- - learning_rate:  0.0001,0.00001
- - activation: 'relu','elu','selu'
- - batch_norm: False,True 
- - filters:  [[32,32,32,32,32],[128,64,64,32,32],[32,64,128,256,512]]
- - data_augmentation: False,True
- - batch_size: 32,64
- - dense_layer: 64,128,256,512,1024
+activation = ELU,
+batch_norm = True,
+batch_size = 32,
+dense_layer = 512,
+dropout = 0.4,
+num_filters = [3,5,3,5,3],
+learning_rate = 0.0001,
+filters = [128,128,64,64,32],
+optimizer_function = rmsprop,
+weight_decay = 0.0004,
+data_augmentation = True,
   
 #### Training the model
  - to train the model we need to initalise the Neural network with CNN() function and Train the model using Train() method it will display validation accuracy, training accuracy 
