@@ -162,11 +162,11 @@ if __name__ == "__main__":
     )
     
     model = BiodiversityCNN(
-        filter_config=[32, 64, 128],
-        kernel_sizes=[3, 3, 3],
-        activation="relu",
+        filter_config=[128,128,64,64,32],
+        kernel_sizes= [3,3,3,3,3],
+        activation="elu",
         dense_units=512,
-        dropout_prob=0.5,
+        dropout_prob=0.4,
         use_batchnorm=True
     )
     
